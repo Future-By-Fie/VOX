@@ -27,3 +27,7 @@ Prefer local processing. Do not record or upload audio without informed consent.
 3. Create a safe headphone-only monitor mode and test feedback prevention.
 4. Add browser/device compatibility testing and measurable latency budgets.
 5. Design OS-specific virtual microphone integration and consent flows.
+
+## v0.4 implementation note
+
+The browser now uses an actual Web Audio graph: microphone MediaStream → AnalyserNode for RMS-based gate control, and microphone → GainNode → MediaStreamAudioDestinationNode for an isolated gated stream. The GainNode target changes on the animation-frame loop, **not** an audio worklet; timing and target-speaker separation remain unvalidated. The stream is not connected to device speakers or to meeting applications. This is an amplitude gate and can pass other speakers when they are loud enough. Never market it as identity-aware isolation.
