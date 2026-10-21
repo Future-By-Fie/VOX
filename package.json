@@ -1,0 +1,13 @@
+{
+  "name": "vox-audio-research",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check src/audio.js && node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
