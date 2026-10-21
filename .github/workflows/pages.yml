@@ -18,9 +18,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/configure-pages@v5
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+        # Requires Settings > Pages > Source: GitHub Actions. A 404 here
+        # usually means Pages has not been enabled for this repository.
       - uses: actions/upload-pages-artifact@v3
         with:
           path: .
+          retention-days: 1
       - id: deployment
         uses: actions/deploy-pages@v4
