@@ -9,8 +9,12 @@ Thank you for your interest in Future-by-Fie. This is an early concept prototype
 - Run `npm run check` locally (Node.js 20+). Do not submit personal information, credentials, or recorded audio.
 - Clearly distinguish implemented capabilities from research goals. Never describe a demo as production-grade security or AI.
 
-## Intellectual property and licensing
+## Open-source license and contributions
 
-**No open-source license has been selected yet.** Public visibility of this repository does not grant permission to copy, modify, distribute, or commercially use the source beyond rights provided by GitHub's terms. Please discuss the intended license and contribution rights with the repository owner *before submitting code contributions*. Issues and non-code proposals are welcome in the meantime.
+This repository is released under the [MIT License](./LICENSE). You may use, modify, redistribute and commercially use the code, provided you preserve the license and copyright notice.
 
-This is a project-policy notice, not a substitute for legal advice. The owner will choose a suitable license and contribution process before accepting external code.
+By submitting a contribution, you agree to license that contribution under the same MIT terms, and confirm that you have the rights to submit it. Do not submit third-party code without compatible permission.
+
+The Future-by-Fie name, logos and trademarks are not licensed for use as endorsements or to imply affiliation. Contributions are reviewed at the maintainer's discretion.
+
+No contribution requires a copyright assignment to Future-by-Fie.
