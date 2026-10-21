@@ -20,6 +20,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
         # Requires Settings > Pages > Source: GitHub Actions. A 404 here
         # usually means Pages has not been enabled for this repository.
       - uses: actions/upload-pages-artifact@v3
