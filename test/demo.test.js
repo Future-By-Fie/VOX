@@ -11,3 +11,10 @@ test('mic UI does not claim speaker isolation',()=>{
  assert.match(html,/not speaker recognition|cannot recognize your voice/i);
  assert.match(html,/No audio is uploaded or saved/);
 });
+
+test('local audio gate is routed only to in-memory stream',()=>{
+ assert.match(html,/createGain\(/);
+ assert.match(html,/createMediaStreamDestination\(/);
+ assert.match(html,/setTargetAtTime\(/);
+ assert.doesNotMatch(html,/\.connect\(context\.destination\)/);
+});
