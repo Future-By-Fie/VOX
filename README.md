@@ -66,4 +66,8 @@ Exploratory design only. Interface interactions are simulated and must not be co
 
 ### Build with us
 
-If you see a better implementation, please open an issue with a concrete proposal. This repository is a public concept showcase; public access does not grant a software reuse license. Discuss licensing before distributing derived work.
+If you see a better implementation, please open an issue with a concrete proposal. The source code is available under the [MIT License](./LICENSE), including commercial use, with attribution and the license notice retained. See [Contributing](./CONTRIBUTING.md) for collaboration guidelines.
+
+## License
+
+Source code is licensed under [MIT](./LICENSE). Contributions are welcome via issues and pull requests. The Future-by-Fie name and brand identity are not a grant of trademark rights.
